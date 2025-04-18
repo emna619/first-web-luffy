@@ -1,0 +1,126 @@
+:root{
+    --primaryColor: #ff274b;
+    --secondaryColor:#f7bcf7;
+    --bgColor-1:#171a1c;
+    --bgColor-2:#22282a;
+    --lightcolor:aliceblue;
+    --padding:8%;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Kufam', sans-serif;
+    font-size: 16px;
+    color:var(--lightcolor);
+}
+.home{
+width: 100%;
+height: 100vh;
+background-color: var(--bgColor-1);
+display: flex;
+flex-direction: column;
+}
+span{
+    color: var(--primaryColor);}
+p{
+    line-height: 1.8rem;
+    font-size: 1rem;
+    direction: rtl;}
+h1{ font-size: 1,5rem }
+h2{
+    font-size: 2.2rem;
+    letter-spacing: 0,12rem;
+    cursor: pointer;}
+h3{ font-size: 2.25rem;}
+h4{ font-size: 1,25rem;}
+h5{ font-size: 1.37rem;
+margin-bottom: 1.5rem;
+direction: rtl;
+}
+nav {
+padding-top: 2.8rem;
+padding-left:var(--padding);
+padding-right: var(--padding);
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+nav ul li{
+list-style-type: none;
+display: inline-block;
+margin: 0.8rem 1rem ;
+} 
+nav ul li a {
+    color: var(--lightcolor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+nav ul li a:hover{
+    color: var(--primaryColor);
+}
+.content{
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-text{
+    position: relative;
+    margin: 1.7rem 0;
+}
+
+.socail{
+    margin-top: 3,5rem;
+}
+.socail img{ 
+    margin-right: 2rem;
+    width: 2,5rem;
+}
+.social img:hover{
+  transform: scale(1.2);
+  transition:0.4s;
+} 
+.contaner-images{
+    width: 40%;
+    height: 90%;
+    position: relative;
+    
+    align-self: flex-end;
+}
+.contaner-images img{
+    position: absolute;
+    bottom: 0;
+height: 100%;
+left: 20%;
+transform: translatex(-100);
+transition: bottom 1s , left 1s;
+
+}
+.contaner-images:hover .thunder{ bottom: 60px;}
+.contaner-images:hover .luffy{ left:45%;}
+.about{ 
+    background-color: var(--bgColor-2);
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items: center;
+justify-content: space-evenly;
+  
+}
+.about.container-images{
+    width: 35%;
+ }
+ .about.contaner-images img{
+    width: 90%;
+ }
+.about.container-text{
+    width: 35%;
+    direction: rtl;
+    
+}
